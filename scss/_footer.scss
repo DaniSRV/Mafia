@@ -1,0 +1,116 @@
+.footer {
+  background-color: #c02336;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  .row {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-col {
+
+    p {
+      font-family: 'Avenir-reg';
+      font-size: 14px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-family: 'Avenir-bold' !important;
+      font-size: 18px !important;
+      line-height: 24px;
+    }
+
+  }
+
+  &-list__link {
+    font-family: 'Avenir-reg';
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .contact {
+    &-item {
+      font-family: 'Avenir-bold';
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 10px;
+
+      a {
+        color: #e5e5e5;
+      }
+
+      &--email {
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &-social {
+      display: flex;
+      align-items: baseline;
+
+      &__item {
+        margin-right: 10px;
+      }
+
+      &__link {
+
+        background-color: #5d5d5d;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+
+        img {
+          width: 19px;
+          height: 19px;
+          box-sizing: content-box;
+
+        }
+      }
+    }
+  }
+
+  input {
+
+    font-family: 'Avenir-reg';
+    font-size: 14px;
+    line-height: 22px;
+    text-align: inherit;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #cd4f5e;
+    padding-bottom: 6px;
+    &::placeholder {
+      
+      color: #e8e8e8;
+    }
+  }
+
+  &-info__btn {
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    font-family: 'Avenir-medium';
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 10px 23px;
+
+    &--link {
+      font-family: 'Avenir-reg';
+      font-size: 14px;
+      line-height: 22px;
+      color: #e5e5e5;
+      text-decoration: revert;
+    }
+  }
+}

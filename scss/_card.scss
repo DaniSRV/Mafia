@@ -1,0 +1,46 @@
+.card {
+  background-color: #FFFFFF;
+  width: 263px;
+  padding: 20px 20px 11px;
+
+  // .card-header
+  &-header {
+    span {
+      display: block;
+      margin-bottom: 10px;
+      font-family: 'Avenir-medium';
+      font-size: 14px;
+      line-height: 19px;
+      color: #4DA455;
+
+      &.empty {
+        color: #D0021B;
+      }
+    }
+  }
+
+  // .card-body
+  &-body {
+    padding: 20px 0 10px;
+    font-family: 'Avenir-medium';
+    font-size: 14px;
+    color: #12212DB2;
+  }
+
+  // .card-footer
+  &-footer {
+    &.row {
+      justify-content: space-between;
+    }
+
+    // .cars-footer__price
+    &__price {
+      font-family: 'Avenir-bold';
+      font-size: 14px;
+
+      span {
+        color: #705658;
+      }
+    }
+  }
+}
