@@ -18,6 +18,11 @@
   background-color: #FFFFFF;
   padding: 10px 0;
 }
+.header .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .header-logo p {
   font-size: 14px;
   line-height: 19px;
@@ -85,62 +90,6 @@
           justify-content: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Avenir-reg";
-  background-color: #f9f9f9;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1400px;
-  padding: 0 50px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-family: "Avenir-bold";
-  font-size: 20px;
-  line-height: 27px;
-  color: #705658;
-  text-align: center;
-}
-
-button {
-  background-color: transparent;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.btn {
-  font-family: "Avenir-medium";
-  font-size: 14px;
-  color: #DC434E;
-  padding: 10px 20px;
-  border: 1px solid #DC434E;
-  border-radius: 3px;
-}
-
 .menu {
   background-color: #d12c37;
   padding: 0 50px;
@@ -156,6 +105,7 @@ button {
   display: flex;
   position: relative;
   margin: 26px 10px;
+  margin-left: 0;
 }
 .menu .menu-nav__item {
   color: #FFFFFF;
@@ -215,60 +165,12 @@ button {
   line-height: 19px;
 }
 
-.banner {
-  padding-top: 31px;
-}
-.banner-image {
-  width: 967px;
-  height: 504px;
-}
-.banner .catalog {
-  background-color: #FFFFFF;
-  width: 303px;
-  height: 504px;
-}
-.banner .catalog h2 {
-  text-align: left;
-  padding-top: 30px;
-  padding-left: 30px;
-}
-.banner .catalog-list__item {
-  padding: 15px 0;
-  position: relative;
-}
-.banner .catalog-list__item:hover {
-  background-color: #FBECED;
-}
-.banner .catalog-list__item:hover::before {
-  width: 5px;
-  height: 100%;
-  content: "";
-  position: absolute;
-  border-radius: 0 2px 2px 0;
-  background-color: #d93c47;
-  top: 0;
-  left: 0;
-}
-.banner .catalog-list__link {
-  font-family: "Avenir-reg";
-  font-size: 14px;
-  color: #12212d;
-  padding-top: 30px;
-  padding-left: 30px;
-}
-
-.content {
-  padding-top: 80px;
-}
-.content h2 {
-  margin-bottom: 30px;
-}
-.content .card {
+.card {
   background-color: #FFFFFF;
   width: 263px;
   padding: 20px 20px 11px;
 }
-.content .card-header span {
+.card-header span {
   display: block;
   margin-bottom: 10px;
   font-family: "Avenir-medium";
@@ -276,112 +178,32 @@ button {
   line-height: 19px;
   color: #4DA455;
 }
-.content .card-header span.empty {
+.card-header span.empty {
   color: #D0021B;
 }
-.content .card-body {
+.card-body {
   padding: 20px 0 10px;
   font-family: "Avenir-medium";
   font-size: 14px;
   color: rgba(18, 33, 45, 0.6980392157);
 }
-.content .card-footer.row {
+.card-footer.row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.content .card-footer__price {
+.card-footer__price {
   font-family: "Avenir-bold";
   font-size: 14px;
 }
-.content .card-footer__price span {
+.card-footer__price span {
   color: #705658;
-}
-.content-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30px;
-  border-top: 1px solid #B7BCC0;
-}
-.content-nav__btn {
-  padding: 28px 25px;
-  border: 1px solid #B7BCC0;
-  border-top: none;
-}
-.content-nav__btn--next {
-  border-left: none;
-}
-
-.other .row {
-  margin-top: 70px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-.other .row .card {
-  padding: 30px 30px 0 30px;
-  background-color: #e8e8e8;
-}
-.other .row .card-name {
-  font-size: 30px;
-  line-height: 40px;
-  text-align: left;
-}
-.other .row .card-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.other .row .card-info__price {
-  margin-right: 121px;
-}
-.other .row .card-info__price span {
-  display: block;
-  font-family: "Avenir-bold";
-  font-size: 30px;
-  line-height: 40px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.other .row .card-info__btn {
-  background-color: #da404b;
-  border: none;
-  border-radius: 3px;
-  padding: 16px 62px;
-  font-size: 14px;
-  line-height: 19px;
-  color: #ffffff;
-}
-
-.text-row {
-  margin-bottom: 60px;
-}
-.text-row h1 {
-  font-family: "Avenir-bold";
-  font-size: 30px;
-  line-height: 40px;
-  text-align: left;
-  color: #705658;
-  margin-top: 60px;
-}
-.text-row p {
-  font-family: "Avenir-medium";
-  font-size: 16px;
-  line-height: 22px;
-  color: #12212d;
-  margin-top: 30px;
 }
 
 .footer {
   background-color: #c02336;
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 .footer .row {
   -webkit-box-pack: justify;
@@ -497,4 +319,259 @@ button {
   color: #e5e5e5;
   -webkit-text-decoration: revert;
           text-decoration: revert;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir-reg";
+  background-color: #f9f9f9;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Avenir-bold";
+  font-size: 20px;
+  line-height: 27px;
+  color: #705658;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn {
+  font-family: "Avenir-medium";
+  font-size: 14px;
+  color: #DC434E;
+  padding: 10px 20px;
+  border: 1px solid #DC434E;
+  border-radius: 3px;
+}
+
+.banner {
+  padding-top: 31px;
+}
+.banner-image {
+  width: 967px;
+  height: 504px;
+}
+.banner .catalog {
+  background-color: #FFFFFF;
+  width: 303px;
+  height: 504px;
+}
+.banner .catalog h2 {
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.banner .catalog-list__item {
+  padding: 15px 0;
+  position: relative;
+}
+.banner .catalog-list__item:hover {
+  background-color: #FBECED;
+}
+.banner .catalog-list__item:hover::before {
+  width: 5px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  border-radius: 0 2px 2px 0;
+  background-color: #d93c47;
+  top: 0;
+  left: 0;
+}
+.banner .catalog-list__link {
+  font-family: "Avenir-reg";
+  font-size: 14px;
+  color: #12212d;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.content {
+  padding-top: 80px;
+}
+.content h2 {
+  margin-bottom: 30px;
+}
+.content-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  border-top: 1px solid #B7BCC0;
+}
+.content-nav__btn {
+  padding: 28px 25px;
+  border: 1px solid #B7BCC0;
+  border-top: none;
+}
+.content-nav__btn--next {
+  border-left: none;
+}
+
+.other .row {
+  margin-top: 70px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.other .row .card {
+  padding: 30px 30px 0 30px;
+  background-color: #e8e8e8;
+}
+.other .row .card-name {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: left;
+}
+.other .row .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.other .row .card-info__price {
+  margin-right: 121px;
+}
+.other .row .card-info__price span {
+  display: block;
+  font-family: "Avenir-bold";
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.other .row .card-info__btn {
+  background-color: #da404b;
+  border: none;
+  border-radius: 3px;
+  padding: 16px 62px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.text-row {
+  margin-bottom: 60px;
+}
+.text-row h1 {
+  font-family: "Avenir-bold";
+  font-size: 30px;
+  line-height: 40px;
+  text-align: left;
+  color: #705658;
+  margin-top: 60px;
+}
+.text-row p {
+  font-family: "Avenir-medium";
+  font-size: 16px;
+  line-height: 22px;
+  color: #12212d;
+  margin-top: 30px;
+}
+
+.breadcrumbs {
+  background-color: #FFFFFF;
+  padding: 26px 0;
+}
+.breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.breadcrumbs-list__item {
+  margin-right: 8px;
+  position: relative;
+}
+.breadcrumbs-list__item:not(:first-child)::before {
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  background-color: #12212d;
+  left: -4px;
+  top: 50%;
+}
+.breadcrumbs-list__item:last-child {
+  color: #5a646c;
+}
+.breadcrumbs-list__link {
+  color: #12212d;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 41px;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+}
+.search-found p {
+  color: #5a646c;
+}
+.search-found span {
+  font-family: "Avenir-medium";
+  color: #12212d;
+}
+.search-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.search-sorting p {
+  font-family: "Avenir-medium";
+  line-height: 19px;
+}
+
+.row .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }

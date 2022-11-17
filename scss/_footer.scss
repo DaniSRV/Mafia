@@ -8,6 +8,7 @@
     align-items: flex-start;
   }
 
+  // .footer-col
   &-col {
 
     p {
@@ -18,6 +19,7 @@
       margin-bottom: 10px;
     }
 
+    // .footer-col__title
     &__title {
       font-family: 'Avenir-bold' !important;
       font-size: 18px !important;
@@ -26,6 +28,7 @@
 
   }
 
+  // .footer-list__link
   &-list__link {
     font-family: 'Avenir-reg';
     font-size: 14px;
@@ -34,6 +37,8 @@
   }
 
   .contact {
+
+    // .contact-item
     &-item {
       font-family: 'Avenir-bold';
       font-size: 18px;
@@ -44,6 +49,7 @@
         color: #e5e5e5;
       }
 
+      // .contact-item--email
       &--email {
         a {
           color: #FFFFFF;
@@ -51,14 +57,17 @@
       }
     }
 
+    // .contact-social
     &-social {
       display: flex;
       align-items: baseline;
 
+      // ..contact-social__item
       &__item {
         margin-right: 10px;
       }
 
+      // ..contact-social__link
       &__link {
 
         background-color: #5d5d5d;
@@ -90,12 +99,14 @@
     background-color: transparent;
     border-bottom: 1px solid #cd4f5e;
     padding-bottom: 6px;
+
     &::placeholder {
-      
+
       color: #e8e8e8;
     }
   }
 
+  // .footer-info__btn
   &-info__btn {
     border: 1px solid #FFFFFF;
     border-radius: 3px;
@@ -105,6 +116,7 @@
     color: #FFFFFF;
     padding: 10px 23px;
 
+    // ..footer-info__btn--link
     &--link {
       font-family: 'Avenir-reg';
       font-size: 14px;
