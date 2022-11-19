@@ -69,7 +69,7 @@ button {
     height: 504px;
   }
 
-  .catalog {
+  .sidebar {
     background-color: #FFFFFF;
     width: 303px;
     height: 504px;
@@ -80,10 +80,10 @@ button {
       padding-left: 30px;
     }
 
-    // .catalog-list
+    // .sidebar-list
     &-list {
 
-      // .catalog-list__item
+      // .sidebar-list__item
       &__item {
         padding: 15px 0;
         position: relative;
@@ -104,7 +104,7 @@ button {
         }
       }
 
-      // .catalog-list__link
+      // .sidebar-list__link
       &__link {
         font-family: 'Avenir-reg';
         font-size: 14px;

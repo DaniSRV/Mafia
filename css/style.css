@@ -386,24 +386,24 @@ button {
   width: 967px;
   height: 504px;
 }
-.banner .catalog {
+.banner .sidebar {
   background-color: #FFFFFF;
   width: 303px;
   height: 504px;
 }
-.banner .catalog h2 {
+.banner .sidebar h2 {
   text-align: left;
   padding-top: 30px;
   padding-left: 30px;
 }
-.banner .catalog-list__item {
+.banner .sidebar-list__item {
   padding: 15px 0;
   position: relative;
 }
-.banner .catalog-list__item:hover {
+.banner .sidebar-list__item:hover {
   background-color: #FBECED;
 }
-.banner .catalog-list__item:hover::before {
+.banner .sidebar-list__item:hover::before {
   width: 5px;
   height: 100%;
   content: "";
@@ -413,7 +413,7 @@ button {
   top: 0;
   left: 0;
 }
-.banner .catalog-list__link {
+.banner .sidebar-list__link {
   font-family: "Avenir-reg";
   font-size: 14px;
   color: #12212d;
