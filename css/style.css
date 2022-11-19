@@ -237,7 +237,7 @@
   line-height: 25px;
   margin-bottom: 10px;
 }
-.footer .contact-item a {
+.footer .contact-item__number {
   color: #e5e5e5;
 }
 .footer .contact-item--email a {
@@ -539,6 +539,9 @@ button {
   color: #12212d;
 }
 
+.catalog {
+  margin-right: 30px;
+}
 .catalog-title {
   font-size: 30px;
   line-height: 41px;
@@ -551,6 +554,13 @@ button {
   display: -ms-flexbox;
   display: flex;
   background-color: #FFFFFF;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 30px;
 }
 .search-found p {
   color: #5a646c;
@@ -563,15 +573,36 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .search-sorting p {
   font-family: "Avenir-medium";
   line-height: 19px;
 }
+.search-sorting span {
+  margin-left: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
+.row .text {
+  margin: 30px 0;
+}
 .row .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
