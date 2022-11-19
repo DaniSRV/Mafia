@@ -369,6 +369,11 @@ button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.row--catalog {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 
 .btn {
   font-family: "Avenir-medium";
@@ -390,6 +395,7 @@ button {
   background-color: #FFFFFF;
   width: 303px;
   height: 504px;
+  margin-right: 30px;
 }
 .banner .sidebar h2 {
   text-align: left;
@@ -547,6 +553,7 @@ button {
   line-height: 41px;
   text-align: left;
   padding: 20px 0;
+  padding-left: 15px;
 }
 
 .search {
@@ -591,18 +598,18 @@ button {
           justify-content: center;
 }
 
-.row .text {
+.text-catalog {
   margin: 30px 0;
 }
-.row .row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+.catalog-list.row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 40px;
+}
+.catalog-list__item {
+  margin: 15px 0;
 }
