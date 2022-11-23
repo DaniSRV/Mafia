@@ -356,36 +356,39 @@ button {
           border-right: none;
         }
 
-        .card-header {
-          display: flex;
-          align-items: baseline;
-          justify-content: space-between;
+        .card {
 
-          .red {
-            color: #D0021B;
-          }
+          &-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
 
-          .orange {
-            color: #D57B1C;
-          }
+            .red {
+              color: #D0021B;
+            }
 
-          .col {
-            background-color: #75D67E;
+            .orange {
+              color: #D57B1C;
+            }
 
-            .btn {
-              line-height: 19px;
-              color: #FFFFFF;
-              padding: 3px 14px 3px 10px;
-              border: none;
+            .col {
+              background-color: #75D67E;
+
+              .btn {
+                line-height: 19px;
+                color: #FFFFFF;
+                padding: 3px 14px 3px 10px;
+                border: none;
+              }
             }
           }
-        }
 
-        .card-footer {
-          .col {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+          &-footer {
+            .col {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
           }
         }
       }
